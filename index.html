@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corazon D. Melon</title>
+  <link rel="shortcut icon" href="imagens/teach.png" type="image/x-icon">
+
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+  
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+    * {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+    }
+
+    body {
+      
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      background-image: url(imagens/wallhaven-8x79yy_1920x1080.png);
+      background-position: left center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+  
+
+    }
+     h1#aniver{
+      text-indent: 1em;
+        font-weight: 100;
+        margin-bottom: 10px;
+        font-family: "Mystery Quest", system-ui;
+        padding: 10px;
+     }
+    .heart {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      transform: rotate(-50deg); /* Mantém o coração em pé */
+      animation: heart-animation 4s ease-in-out forwards;
+      opacity: 0;
+    }
+
+    .heart:before,
+    .heart:after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      border-radius: 50%;
+    }
+  
+
+    .heart:before {
+      top: -25px;
+      left: 0;
+    }
+
+    .heart:after {
+      top: 0;
+      left: 25px;
+    }
+
+    /* Animação que faz o coração subir e desaparecer */
+    @keyframes heart-animation {
+      0% {
+        top: 100%;
+        opacity: 1;
+      }
+      50% {
+        top: 50%;
+        opacity: 0.3;
+      }
+      100% {
+        top: -20%;
+        opacity: 0;
+      }
+    
+    }
+
+
+
+
+
+
+
+
+
+    h1#dil{
+        color: blueviolet;
+        font-family: "Montserrat", sans-serif;
+        padding: 10px;
+        display: block;
+       
+    }
+    strong{
+        color: white;
+        display: inline-block;
+        text-align: center;
+        font-size: 4em;
+        font-weight: 2;
+        font-family: "Rouge Script", cursive;
+    }
+
+    html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+ 
+   }
+   #zab{
+        border-radius: 10px;
+        height: 100px;  
+    }
+    #hack{
+        border-radius: 10px;
+        height: 100px;
+    }
+    #lado{
+      margin-top: 10px;
+      text-align: left;
+      display: flex;
+    }
+
+    div#caixa{
+     
+        background-color: rgba(253, 127, 207, 0.76);
+        margin-top: 60px;
+        box-shadow: 2px 1px 10px 1px black;
+        border: solid 2px black;
+        border-radius: 20px;
+        position: absolute;
+       
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 80%;
+        width: 84%;
+    }
+    p.let{
+      line-height: 1.5em;
+        font-size: 1.2em;
+        font-family: "Sour Gummy", sans-serif;
+    }
+    #mj{
+      font-family: "Petit Formal Script", cursive;
+      font-size: 1em;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (min-width:992px){
+      
+        div#caixa{
+            width: 70%;
+            height: 70%;
+        }
+    } 
+    
+  </style>
+</head>
+<body>
+  <header><h1 id="dil">Pa Usted 🌹</h1> 
+             
+    <strong>Corazon D. Melon</strong>
+</header>  
+    <div id="caixa">
+      <h1 id="aniver">💐Feliz  Aniversario 💐 </h1>
+      <p class="let">Quero Que esse dia Seja Muito Feliz Pra voce, Nao so esse ne  azideakkk,<br>Que Voce Seja Feliz Todos os dias.<br>
+      mesmo Nessa Situaçao de agora😞, Ainda Torço Pela Sua Felicidade, Espero Que Logo em Breve Agente Possa Passar Mais Tempo Juntos, Voce Merece Tudo De Melhor Nesse Dia E todos os outros Tbm kkkkkk,
+      Sei que a gente ainda não tem muitas memórias juntos, mas eu estou completamente disposto a criar todas elas com você💖.
+      Feliz Aniversario
+       <br>
+      <strong id="mj">💕💕Maria Julia💕💕</strong>
+      <br> 
+      </p>
+      <img src="imagens/zabl.webp" alt="Zazab" id="zab">
+      
+
+
+        </iframe>
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    // Função para criar e animar o coração
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      
+      // Posição aleatória para o coração
+      const randomX = Math.random() * window.innerWidth;
+      heart.style.left = `${randomX}px`;
+
+      // Adiciona o coração ao corpo do documento
+      document.body.appendChild(heart);
+      
+      // Remove o coração após a animação (4s)
+      setTimeout(() => {
+        heart.remove();
+      }, 4000);
+    }
+
+    // Cria corações a cada 500ms
+    setInterval(createHeart, 500);
+  </script>
+</body>
+</html>
